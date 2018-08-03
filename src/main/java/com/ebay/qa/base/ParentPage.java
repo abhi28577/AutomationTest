@@ -63,12 +63,12 @@ public class ParentPage {
 		// Defining Properties of Browser		
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		
 		//Defining the Path of Parent URL (https://www.ebay.com.au)
 		driver.get(prop.getProperty("url"));
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 	}
 
 }
