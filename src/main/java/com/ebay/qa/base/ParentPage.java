@@ -26,7 +26,7 @@ public class ParentPage {
 			//Importing Properties from Config File
 			prop=new Properties();
 			//FileInputStream IP = new FileInputStream("/Users/abhi28577/eclipse-workspace/EbayAutomation/src/main/java/com/ebay/qa/config/config.properties");
-			FileInputStream IP = new FileInputStream("/src/main/java/com/ebay/qa/config.properties");
+			FileInputStream IP = new FileInputStream("/src/main/java/com/ebay/qa/config/config.properties");
 			prop.load(IP);
 		}
 		catch (FileNotFoundException e)
