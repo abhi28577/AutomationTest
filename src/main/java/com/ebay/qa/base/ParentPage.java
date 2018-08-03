@@ -25,7 +25,8 @@ public class ParentPage {
 		{
 			//Importing Properties from Config File
 			prop=new Properties();
-			FileInputStream IP = new FileInputStream("/Users/abhi28577/eclipse-workspace/EbayAutomation/src/main/java/com/ebay/qa/config/config.properties");
+			//FileInputStream IP = new FileInputStream("/Users/abhi28577/eclipse-workspace/EbayAutomation/src/main/java/com/ebay/qa/config/config.properties");
+			FileInputStream IP = new FileInputStream("/src/main/java/com/ebay/qa/config.properties");
 			prop.load(IP);
 		}
 		catch (FileNotFoundException e)
@@ -46,14 +47,14 @@ public class ParentPage {
 		{
 			//Path of Chrome Driver
 			//System.setProperty("webdriver.chrome.driver", "//Users//abhi28577//Hadoop//Selenium//Java//Driver//chromedriver");
-			System.setProperty("webdriver.chrome.driver", "chromedriver");
+			System.setProperty("webdriver.chrome.driver", "/chromedriver");
 			driver = new ChromeDriver();
 		}
 		else if(BrowserName.equals("FF"))
 		{
 			//Path of FireFox Driver
 			//System.setProperty("webdriver.gecko.driver", "//Users//abhi28577//Hadoop//Selenium//Java//Driver/geckodriver");
-			System.setProperty("webdriver.gecko.driver", "geckodriver");
+			System.setProperty("webdriver.gecko.driver", "/geckodriver");
 			driver = new FirefoxDriver();
 		}
 		
