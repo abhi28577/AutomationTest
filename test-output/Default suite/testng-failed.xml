@@ -7,9 +7,17 @@
         <methods>
           <include name="teardown"/>
           <include name="setUp"/>
+          <include name="DisplayProduct1"/>
           <include name="DisplayProduct2"/>
         </methods>
       </class> <!-- com.ebay.qa.testset.ProductPageTest -->
+      <class name="com.ebay.qa.testset.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="ValidateDealsLinkTextTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.ebay.qa.testset.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -3,6 +3,7 @@ package com.ebay.qa.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.ebay.qa.base.ParentPage;
 
@@ -45,12 +46,16 @@ public class LoginPage extends ParentPage {
 		// Clicking 'Sign In' to populate Login Window 
 		SignInText.click();
 		
+		WebDriverWait wait = new WebDriverWait(driver,5);
+		
 		//Passing Username
 		Username.sendKeys(User);
 		
 		//Passing Password
 		Password.sendKeys(Pword);
 		SignIn.click();
+		
+		wait = new WebDriverWait(driver,5);
 		
 		return new HomePage();
 	
