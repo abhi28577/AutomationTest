@@ -43,14 +43,14 @@ public class ParentPage {
 	{
 		//Parameters populating from Config File. Config File needs to be changed for Browser(Chrome/FireFox)
 		String BrowserName = prop.getProperty("browser");
-		if(BrowserName.equals("chrome"))
+		if(BrowserName.equals('chrome'))
 		{
 			//Path of Chrome Driver
 			//System.setProperty("webdriver.chrome.driver", "//Users//abhi28577//Hadoop//Selenium//Java//Driver//chromedriver");
 			System.setProperty("webdriver.chrome.driver", "/chromedriver");
 			driver = new ChromeDriver();
 		}
-		else if(BrowserName.equals("FF"))
+		else if(BrowserName.equals('FF'))
 		{
 			//Path of FireFox Driver
 			//System.setProperty("webdriver.gecko.driver", "//Users//abhi28577//Hadoop//Selenium//Java//Driver/geckodriver");
