@@ -6,11 +6,10 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
 
 import com.ebay.qa.util.TestUtil;
 
@@ -25,8 +24,9 @@ public class ParentPage {
 		{
 			//Importing Properties from Config File
 			prop=new Properties();
-			//FileInputStream IP = new FileInputStream("/Users/abhi28577/eclipse-workspace/EbayAutomation/src/main/java/com/ebay/qa/config/config.properties");
-			FileInputStream IP = new FileInputStream("/src/main/java/com/ebay/qa/config/config.properties");
+			FileInputStream IP = new FileInputStream("/Users/abhi28577/eclipse-workspace/AutomationTest/src/main/java/com/ebay/qa/config/config.properties");
+			
+			//FileInputStream IP = new FileInputStream("/src/main/java/com/ebay/qa/config/config.properties");
 			prop.load(IP);
 		}
 		catch (FileNotFoundException e)
@@ -47,14 +47,16 @@ public class ParentPage {
 		{
 			//Path of Chrome Driver
 			//System.setProperty("webdriver.chrome.driver", "//Users//abhi28577//Hadoop//Selenium//Java//Driver//chromedriver");
-			System.setProperty("webdriver.chrome.driver", "/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "../AutomationTest/chromedriver");
+			//System.setProperty("webdriver.chrome.driver", "/chromedriver");
 			driver = new ChromeDriver();
 		}
 		else if(BrowserName.equals("FF"))
 		{
 			//Path of FireFox Driver
 			//System.setProperty("webdriver.gecko.driver", "//Users//abhi28577//Hadoop//Selenium//Java//Driver/geckodriver");
-			System.setProperty("webdriver.gecko.driver", "/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "../AutomationTest/geckodriver");
+			//System.setProperty("webdriver.gecko.driver", "/geckodriver");
 			driver = new FirefoxDriver();
 		}
 		
