@@ -45,13 +45,15 @@ public class ParentPage {
 		if(BrowserName.equals("chrome"))
 		{
 			//Path of Chrome Driver
-			System.setProperty("webdriver.chrome.driver", "//Users//abhi28577//Hadoop//Selenium//Java//Driver//chromedriver");
+			//System.setProperty("webdriver.chrome.driver", "//Users//abhi28577//Hadoop//Selenium//Java//Driver//chromedriver");
+			System.setProperty("webdriver.chrome.driver", "chromedriver");
 			driver = new ChromeDriver();
 		}
 		else if(BrowserName.equals("FF"))
 		{
 			//Path of FireFox Driver
-			System.setProperty("webdriver.gecko.driver", "//Users//abhi28577//Hadoop//Selenium//Java//Driver/geckodriver");
+			//System.setProperty("webdriver.gecko.driver", "//Users//abhi28577//Hadoop//Selenium//Java//Driver/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "geckodriver");
 			driver = new FirefoxDriver();
 		}
 		
