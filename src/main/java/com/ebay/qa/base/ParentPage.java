@@ -48,7 +48,7 @@ public class ParentPage {
 			//Path of Chrome Driver
 			//System.setProperty("webdriver.chrome.driver", "//Users//abhi28577//Hadoop//Selenium//Java//Driver//chromedriver");
 			//System.setProperty("webdriver.chrome.driver", "../AutomationTest/chromedriver");
-			System.setProperty("webdriver.chrome.driver", "chromedriver");
+			System.setProperty("webdriver.chrome.driver", "Driver/chromedriver");
 			driver = new ChromeDriver();
 		}
 		else if(BrowserName.equals("FF"))
@@ -56,7 +56,7 @@ public class ParentPage {
 			//Path of FireFox Driver
 			//System.setProperty("webdriver.gecko.driver", "//Users//abhi28577//Hadoop//Selenium//Java//Driver/geckodriver");
 			//System.setProperty("webdriver.gecko.driver", "../AutomationTest/geckodriver");
-			System.setProperty("webdriver.gecko.driver", "geckodriver");
+			System.setProperty("webdriver.gecko.driver", "Driver/geckodriver");
 			driver = new FirefoxDriver();
 		}
 		
