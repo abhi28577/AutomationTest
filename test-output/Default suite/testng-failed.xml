@@ -3,11 +3,36 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="com.ebay.qa.testset.LoginPageTest">
+        <methods>
+          <include name="HomePageDisplayTest"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.ebay.qa.testset.LoginPageTest -->
+      <class name="com.ebay.qa.testset.HomePageTest">
+        <methods>
+          <include name="ValidateFashionLinkTextTest"/>
+          <include name="ValidateSavedLinkTextTest"/>
+          <include name="setUp"/>
+          <include name="ValidateSportsLinkTextTest"/>
+          <include name="ValidateLiquorGroceryLinkTextTest"/>
+          <include name="ValidateElectronicsLinkTextTest"/>
+          <include name="teardown"/>
+          <include name="ValidateMotorsLinkTextTest"/>
+          <include name="ValidateCollectablesLinkTextTest"/>
+          <include name="ValidateToysMediaLinkTextTest"/>
+          <include name="ValidateHomeGardenLinkTextTest"/>
+          <include name="ValidateDealsLinkTextTest"/>
+          <include name="ValidateHealthBeautyLinkTextTest"/>
+        </methods>
+      </class> <!-- com.ebay.qa.testset.HomePageTest -->
       <class name="com.ebay.qa.testset.ProductPageTest">
         <methods>
           <include name="teardown"/>
           <include name="setUp"/>
           <include name="DisplayProduct1"/>
+          <include name="DisplayProduct2"/>
         </methods>
       </class> <!-- com.ebay.qa.testset.ProductPageTest -->
     </classes>
